@@ -6,9 +6,14 @@ $light: light;
 $medium: midium;
 $avenir: avenir;
 $calibri: calibri;
+$dex: dex;
 @font-face {
   font-family: light;
   src: url(../fonts/light.otf);
+}
+@font-face {
+  font-family: dex;
+  src: url(../fonts/Pervitina-Dex-FFP.ttf);
 }
 @font-face {
   font-family: midium;
@@ -22,6 +27,36 @@ $calibri: calibri;
   font-family: calibri;
   src: url(../fonts/calibri.ttf);
 }
+@keyframes mitop {
+  0% {
+    opacity: 0;
+    transform: translatey(-100px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes mibottom {
+  0% {
+    opacity: 0;
+    transform: translatey(-100px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 @keyframes mileft {
   0% {
     opacity: 0;
@@ -30,6 +65,21 @@ $calibri: calibri;
 
   80% {
     transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes mileft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(0px);
   }
 
   100% {
@@ -69,13 +119,13 @@ body {
   margin: 0;
   padding: 0;
   background: $blackblue;
-  transition: 10s;
+  transition: 1.6s ease;
 }
 .header {
   height: 100%;
   width: 90%;
   color: $blackblue;
-  transition: 4s ease;
+  transition: 3s ease;
   margin: auto;
 }
 .navbar {
@@ -182,7 +232,7 @@ body {
 }
 .contact {
   display: flex;
-  background: rgb(156, 156, 156);
+  background: rgb(197, 197, 197);
   align-items: center;
   &-header {
     font-size: 10vh;
@@ -232,15 +282,35 @@ body {
   &-imgs {
     width: 50%;
     height: 100%;
+    position: relative;
+    &-sub {
+      position: absolute;
+      color: $blackblue;
+      font-size: 8vh;
+      font-family: $dex;
+      top: 57vh;
+      left: 4vh;
+      animation: mileft 3s ease-out;
+    }
+    &-sub2 {
+      position: absolute;
+      color: $white;
+      font-size: 8vh;
+      font-family: $dex;
+      top: 57vh;
+      left: 32vh;
+      animation: miright 3s ease-out;
+    }
   }
   &-writing {
     width: 50%;
     font-family: $medium;
     padding: 5vh;
+    align-self: center;
 
     &-head {
       font-size: 8vh;
-      padding-bottom: 2vh;
+      padding-bottom: 5vh;
     }
     &-flex {
       display: flex;
@@ -249,9 +319,16 @@ body {
       display: flex;
       margin-bottom: 2vh;
     }
+    &-line {
+      width: 40%;
+      height: 1px;
+      background: $black;
+      align-self: center;
+    }
     &-item {
       font-family: $medium;
-      width: 50%;
+      width: 30%;
+      padding-left: 5vh;
       font-size: 6vh;
       padding-bottom: 1vh;
       color: $red;
@@ -262,6 +339,20 @@ body {
       font-size: 6vh;
       padding-bottom: 1vh;
       color: $blackblue;
+    }
+  }
+  .ani {
+    &-1 {
+      animation: mileft2 1s ease-out;
+    }
+    &-2 {
+      animation: mileft2 2s ease-out;
+    }
+    &-3 {
+      animation: mileft2 3s ease-out;
+    }
+    &-4 {
+      animation: mileft2 4s ease-out;
     }
   }
   &-flex {
@@ -394,37 +485,59 @@ body {
   line-height: 1.5;
 }
 .footer {
-  background: rgb(156, 156, 156);
-  display: flex;
-  &-sec {
-    width: 50%;
+  background: rgb(197, 197, 197);
+  &-sec1 {
+    width: 100%;
+    display: flex;
+  }
+  &-sec1 {
+    width: 100%;
   }
   &-address {
-    padding: 8vh;
-    font-size: 5vh;
-    font-family: $calibri;
-    padding-bottom: 4vh;
+    width: 50%;
+    padding-left: 4vh;
+    font-size: 4vh;
+
+    // font-size: 5vh;
+    font-family: $medium;
+    padding-bottom: 5vh;
   }
   &-phone {
-    padding: 8vh;
-    padding-bottom: 0.1vh;
-    padding-top: 0.1vh;
-    font-size: 5vh;
-    font-family: $avenir;
+    width: 50%;
+    padding-right: 5vh;
+    // padding-bottom: 0.1vh;
+    // padding-top: 0.1vh;
+    font-size: 4vh;
+    font-family: $calibri;
+  }
+  &-container {
+    width: 30%;
+    margin: auto;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
   }
   &-social {
     display: flex;
     width: 100%;
+    margin: auto;
 
     &-img {
-      width: 7vh;
-      margin: 2vh;
+      width: 5vh;
+      margin-right: 2vh;
     }
+  }
+  &-line {
+    width: 80%;
+    height: 1px;
+    background: grey;
+    margin: auto;
   }
   &-name {
     font-size: 3vh;
     margin: auto;
     font-family: $medium;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
   }
 }
 @media screen and (max-width: 576px) {

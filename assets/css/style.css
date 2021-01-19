@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: dex;
+  src: url(../fonts/Pervitina-Dex-FFP.ttf);
+}
+
+@font-face {
   font-family: midium;
   src: url(../fonts/Medium.otf);
 }
@@ -16,6 +21,74 @@
 @font-face {
   font-family: calibri;
   src: url(../fonts/calibri.ttf);
+}
+
+@-webkit-keyframes mitop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mitop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes mibottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mibottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 @-webkit-keyframes mileft {
@@ -44,6 +117,40 @@
   80% {
     -webkit-transform: translateX(20px);
             transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes mileft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mileft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
   100% {
     opacity: 1;
@@ -86,19 +193,6 @@
   }
 }
 
-@-webkit-keyframes mibottom {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
 @keyframes mibottom {
   0% {
     opacity: 0;
@@ -116,16 +210,16 @@ body {
   margin: 0;
   padding: 0;
   background: #061822;
-  -webkit-transition: 10s;
-  transition: 10s;
+  -webkit-transition: 1.6s ease;
+  transition: 1.6s ease;
 }
 
 .header {
   height: 100%;
   width: 90%;
   color: #061822;
-  -webkit-transition: 4s ease;
-  transition: 4s ease;
+  -webkit-transition: 3s ease;
+  transition: 3s ease;
   margin: auto;
 }
 
@@ -264,7 +358,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #9c9c9c;
+  background: #c5c5c5;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -329,17 +423,43 @@ body {
 .facilities-imgs {
   width: 50%;
   height: 100%;
+  position: relative;
+}
+
+.facilities-imgs-sub {
+  position: absolute;
+  color: #061822;
+  font-size: 8vh;
+  font-family: dex;
+  top: 57vh;
+  left: 4vh;
+  -webkit-animation: mileft 3s ease-out;
+          animation: mileft 3s ease-out;
+}
+
+.facilities-imgs-sub2 {
+  position: absolute;
+  color: white;
+  font-size: 8vh;
+  font-family: dex;
+  top: 57vh;
+  left: 32vh;
+  -webkit-animation: miright 3s ease-out;
+          animation: miright 3s ease-out;
 }
 
 .facilities-writing {
   width: 50%;
   font-family: midium;
   padding: 5vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .facilities-writing-head {
   font-size: 8vh;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
 }
 
 .facilities-writing-flex {
@@ -355,9 +475,19 @@ body {
   margin-bottom: 2vh;
 }
 
+.facilities-writing-line {
+  width: 40%;
+  height: 1px;
+  background: #0e0808;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .facilities-writing-item {
   font-family: midium;
-  width: 50%;
+  width: 30%;
+  padding-left: 5vh;
   font-size: 6vh;
   padding-bottom: 1vh;
   color: #ee030a;
@@ -369,6 +499,26 @@ body {
   font-size: 6vh;
   padding-bottom: 1vh;
   color: #061822;
+}
+
+.facilities .ani-1 {
+  -webkit-animation: mileft2 1s ease-out;
+          animation: mileft2 1s ease-out;
+}
+
+.facilities .ani-2 {
+  -webkit-animation: mileft2 2s ease-out;
+          animation: mileft2 2s ease-out;
+}
+
+.facilities .ani-3 {
+  -webkit-animation: mileft2 3s ease-out;
+          animation: mileft2 3s ease-out;
+}
+
+.facilities .ani-4 {
+  -webkit-animation: mileft2 4s ease-out;
+          animation: mileft2 4s ease-out;
 }
 
 .facilities-flex {
@@ -514,29 +664,40 @@ body {
 }
 
 .footer {
-  background: #9c9c9c;
+  background: #c5c5c5;
+}
+
+.footer-sec1 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-sec {
-  width: 50%;
+.footer-sec1 {
+  width: 100%;
 }
 
 .footer-address {
-  padding: 8vh;
-  font-size: 5vh;
-  font-family: calibri;
-  padding-bottom: 4vh;
+  width: 50%;
+  padding-left: 4vh;
+  font-size: 4vh;
+  font-family: midium;
+  padding-bottom: 5vh;
 }
 
 .footer-phone {
-  padding: 8vh;
-  padding-bottom: 0.1vh;
-  padding-top: 0.1vh;
-  font-size: 5vh;
-  font-family: avenir;
+  width: 50%;
+  padding-right: 5vh;
+  font-size: 4vh;
+  font-family: calibri;
+}
+
+.footer-container {
+  width: 30%;
+  margin: auto;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
 }
 
 .footer-social {
@@ -544,17 +705,27 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin: auto;
 }
 
 .footer-social-img {
-  width: 7vh;
-  margin: 2vh;
+  width: 5vh;
+  margin-right: 2vh;
+}
+
+.footer-line {
+  width: 80%;
+  height: 1px;
+  background: grey;
+  margin: auto;
 }
 
 .footer-name {
   font-size: 3vh;
   margin: auto;
   font-family: midium;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
 }
 
 @media screen and (max-width: 576px) {
