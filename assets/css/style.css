@@ -1055,10 +1055,10 @@ body {
   }
   .footer-phone {
     width: 100%;
-    padding-right: 5vh;
     font-size: 4vh;
     font-family: calibri;
     background: #c5c5c5;
+    text-decoration: none;
   }
   .footer-container {
     background: #c5c5c5;
