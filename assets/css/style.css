@@ -895,9 +895,12 @@ body {
     position: relative;
   }
   .facilities-imgb-sub2 {
-    font-size: 3vh;
-    top: 23vh;
-    left: 4vh;
+    font-size: 6vh;
+    position: absolute;
+    font-family: dex;
+    color: white;
+    top: 16vh;
+    left: 23vh;
     visibility: visible;
   }
   .facilities-imgc {
@@ -975,6 +978,29 @@ body {
     margin: auto;
   }
   .images-line {
+    margin: 0vh;
+    width: 0%;
+    height: 0px;
+    visibility: hidden;
+  }
+  .aboutsub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .aboutsub-header {
+    font-size: 5vh;
+    font-family: midium;
+    color: #061822;
+    padding: 4vh;
+    margin: auto;
+  }
+  .aboutsub-line {
     margin: 0vh;
     width: 0%;
     height: 0px;

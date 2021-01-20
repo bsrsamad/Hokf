@@ -692,9 +692,12 @@ body {
       height: 100%;
       position: relative;
       &-sub2 {
-        font-size: 3vh;
-        top: 23vh;
-        left: 4vh;
+        font-size: 6vh;
+        position: absolute;
+        font-family: $dex;
+        color: $white;
+        top: 16vh;
+        left: 23vh;
         visibility: visible;
       }
     }
@@ -753,6 +756,25 @@ body {
     display: flex;
     background: $white;
     align-items: center;
+    &-header {
+      font-size: 5vh;
+      font-family: $medium;
+      color: $blackblue;
+      padding: 4vh;
+      margin: auto;
+    }
+    &-line {
+      margin: 0vh;
+      width: 0%;
+      height: 0px;
+      visibility: hidden;
+    }
+  }
+  .aboutsub {
+    display: flex;
+    background: $white;
+    align-items: center;
+    width: 100%;
     &-header {
       font-size: 5vh;
       font-family: $medium;
