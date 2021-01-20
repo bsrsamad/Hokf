@@ -229,6 +229,10 @@ body {
   background-size: cover;
 }
 
+.flex2 {
+  visibility: hidden;
+}
+
 .flex {
   width: 100%;
   display: -webkit-box;
@@ -728,29 +732,52 @@ body {
   padding-bottom: 4vh;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 800px) {
   .header {
     width: 100%;
+  }
+  .flex2 {
+    visibility: visible;
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+  .flex2-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .flex2-item a:link {
+    text-decoration: none;
+    color: white;
+    font-family: light;
+    font-size: 4vh;
+    float: right;
+  }
+  .flex2-item a:visited {
+    color: white;
+  }
+  .flex2-item a:hover {
+    color: #ee030a;
+  }
+  .flex2-items {
+    margin: auto;
+    width: 50%;
+    padding: 1vh;
+    padding-left: 4vh;
   }
   .flex {
     display: inline;
     width: 100%;
   }
   .flex-logo {
-    width: 60%;
+    width: 45%;
     margin: auto;
-    padding: 2vh;
+    padding: 0vh;
   }
   .flex-item {
-    margin: 0;
-  }
-  .flex-items {
-    padding-right: 4vh;
-    font-size: 1vh;
-  }
-  .flex-nav {
-    width: 10%;
-    display: inline;
+    visibility: hidden;
+    height: 0;
   }
   .slider {
     font-family: midium;

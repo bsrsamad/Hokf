@@ -137,6 +137,9 @@ body {
     url(../img/bg.jpg);
   background-size: cover;
 }
+.flex2 {
+  visibility: hidden;
+}
 .flex {
   width: 100%;
   display: flex;
@@ -540,29 +543,52 @@ body {
     padding-bottom: 4vh;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 800px) {
   .header {
     width: 100%;
+  }
+
+  .flex2 {
+    visibility: visible;
+    width: 100%;
+    padding-bottom: 2vh;
+
+    &-item {
+      display: flex;
+      width: 100%;
+      a:link {
+        text-decoration: none;
+        color: $white;
+        font-family: $light;
+        font-size: 4vh;
+        float: right;
+      }
+      & a:visited {
+        color: $white;
+      }
+      & a:hover {
+        color: $red;
+      }
+    }
+    &-items {
+      margin: auto;
+      width: 50%;
+      padding: 1vh;
+      padding-left: 4vh;
+    }
   }
   .flex {
     display: inline;
     width: 100%;
 
     &-logo {
-      width: 60%;
+      width: 45%;
       margin: auto;
-      padding: 2vh;
+      padding: 0vh;
     }
     &-item {
-      margin: 0;
-    }
-    &-items {
-      padding-right: 4vh;
-      font-size: 1vh;
-    }
-    &-nav {
-      width: 10%;
-      display: inline;
+      visibility: hidden;
+      height: 0;
     }
   }
   .slider {
