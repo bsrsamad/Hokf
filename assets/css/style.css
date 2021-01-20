@@ -820,5 +820,98 @@ body {
     height: 0px;
     visibility: hidden;
   }
+  .facilities {
+    width: 100%;
+    display: inline;
+    height: 100%;
+    background-color: white;
+  }
+  .facilities-img {
+    width: 100%;
+    height: 100%;
+  }
+  .facilities-imgs {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .facilities-imgs-sub {
+    font-size: 3.5vh;
+    top: 25vh;
+    left: 3vh;
+  }
+  .facilities-imgs-sub2 {
+    position: absolute;
+    color: white;
+    font-size: 8vh;
+    font-family: dex;
+    top: 57vh;
+    left: 32vh;
+    -webkit-animation: miright 3s ease-out;
+            animation: miright 3s ease-out;
+  }
+  .facilities-writing {
+    width: 100%;
+    padding: 1.5vh;
+    background-color: white;
+  }
+  .facilities-writing-head {
+    font-size: 6vh;
+    padding-bottom: 1vh;
+  }
+  .facilities-writing-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .facilities-writing-flex2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2vh;
+  }
+  .facilities-writing-line {
+    width: 40%;
+    height: 1px;
+    background: #0e0808;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .facilities-writing-item {
+    width: 30%;
+    padding-left: 2vh;
+    font-size: 3vh;
+    padding-bottom: 1vh;
+    color: #ee030a;
+  }
+  .facilities-writing-item2 {
+    font-family: midium;
+    width: 50%;
+    font-size: 6vh;
+    padding-bottom: 1vh;
+    color: #061822;
+  }
+  .facilities .ani-1 {
+    -webkit-animation: mileft2 1s ease-out;
+            animation: mileft2 1s ease-out;
+  }
+  .facilities .ani-2 {
+    -webkit-animation: mileft2 2s ease-out;
+            animation: mileft2 2s ease-out;
+  }
+  .facilities .ani-3 {
+    -webkit-animation: mileft2 3s ease-out;
+            animation: mileft2 3s ease-out;
+  }
+  .facilities .ani-4 {
+    -webkit-animation: mileft2 4s ease-out;
+            animation: mileft2 4s ease-out;
+  }
+  .facilities-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */

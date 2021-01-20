@@ -628,4 +628,86 @@ body {
       visibility: hidden;
     }
   }
+  .facilities {
+    width: 100%;
+    display: inline;
+    height: 100%;
+    background-color: $white;
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+    &-imgs {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      &-sub {
+        font-size: 3.5vh;
+        top: 25vh;
+        left: 3vh;
+      }
+      &-sub2 {
+        position: absolute;
+        color: $white;
+        font-size: 8vh;
+        font-family: $dex;
+        top: 57vh;
+        left: 32vh;
+        animation: miright 3s ease-out;
+      }
+    }
+    &-writing {
+      width: 100%;
+      padding: 1.5vh;
+      background-color: $white;
+      &-head {
+        font-size: 6vh;
+        padding-bottom: 1vh;
+      }
+      &-flex {
+        display: flex;
+      }
+      &-flex2 {
+        display: flex;
+        margin-bottom: 2vh;
+      }
+      &-line {
+        width: 40%;
+        height: 1px;
+        background: $black;
+        align-self: center;
+      }
+      &-item {
+        width: 30%;
+        padding-left: 2vh;
+        font-size: 3vh;
+        padding-bottom: 1vh;
+        color: $red;
+      }
+      &-item2 {
+        font-family: $medium;
+        width: 50%;
+        font-size: 6vh;
+        padding-bottom: 1vh;
+        color: $blackblue;
+      }
+    }
+    .ani {
+      &-1 {
+        animation: mileft2 1s ease-out;
+      }
+      &-2 {
+        animation: mileft2 2s ease-out;
+      }
+      &-3 {
+        animation: mileft2 3s ease-out;
+      }
+      &-4 {
+        animation: mileft2 4s ease-out;
+      }
+    }
+    &-flex {
+      display: flex;
+    }
+  }
 }
