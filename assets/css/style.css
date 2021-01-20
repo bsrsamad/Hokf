@@ -737,8 +737,38 @@ body {
     width: 100%;
   }
   .flex-logo {
-    width: 80%;
+    width: 60%;
     margin: auto;
+    padding: 2vh;
+  }
+  .flex-item {
+    margin: 0;
+  }
+  .flex-items {
+    padding-right: 4vh;
+    font-size: 1vh;
+  }
+  .flex-nav {
+    width: 10%;
+    display: inline;
+  }
+  .slider {
+    font-family: midium;
+    padding-bottom: 4vh;
+  }
+  .slider-main {
+    font-size: 4vh;
+    font-weight: 300;
+    letter-spacing: 10px;
+    -webkit-animation: mileft 3s ease-out;
+            animation: mileft 3s ease-out;
+  }
+  .slider-sub {
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 10px;
+    -webkit-animation: miright 3s ease-out;
+            animation: miright 3s ease-out;
   }
 }
 /*# sourceMappingURL=style.css.map */

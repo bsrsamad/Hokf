@@ -547,9 +547,39 @@ body {
   .flex {
     display: inline;
     width: 100%;
+
     &-logo {
-      width: 80%;
+      width: 60%;
       margin: auto;
+      padding: 2vh;
+    }
+    &-item {
+      margin: 0;
+    }
+    &-items {
+      padding-right: 4vh;
+      font-size: 1vh;
+    }
+    &-nav {
+      width: 10%;
+      display: inline;
+    }
+  }
+  .slider {
+    font-family: $medium;
+    padding-bottom: 4vh;
+
+    &-main {
+      font-size: 4vh;
+      font-weight: 300;
+      letter-spacing: 10px;
+      animation: mileft 3s ease-out;
+    }
+    &-sub {
+      font-size: 2vh;
+      font-weight: 400;
+      letter-spacing: 10px;
+      animation: miright 3s ease-out;
     }
   }
 }
