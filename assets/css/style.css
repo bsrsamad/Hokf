@@ -1006,5 +1006,12 @@ body {
     height: 0px;
     visibility: hidden;
   }
+  .about {
+    width: 85%;
+    font-size: 2.5vh;
+    font-family: light;
+    letter-spacing: 1px;
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=style.css.map */
