@@ -408,6 +408,12 @@ body {
   background: #ee030a;
 }
 
+.facilitiesb {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 .facilities {
   width: 100%;
   background: white;
@@ -422,6 +428,16 @@ body {
 .facilities-img {
   width: 100%;
   height: 100%;
+}
+
+.facilities-imgb {
+  width: 0;
+}
+
+.facilities-imgb-sub2 {
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .facilities-imgs {
@@ -442,6 +458,34 @@ body {
 }
 
 .facilities-imgs-sub2 {
+  position: absolute;
+  color: white;
+  font-size: 8vh;
+  font-family: dex;
+  top: 57vh;
+  left: 32vh;
+  -webkit-animation: miright 3s ease-out;
+          animation: miright 3s ease-out;
+}
+
+.facilities-imgc {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.facilities-imgc-sub {
+  position: absolute;
+  color: #061822;
+  font-size: 8vh;
+  font-family: dex;
+  top: 57vh;
+  left: 4vh;
+  -webkit-animation: mileft 3s ease-out;
+          animation: mileft 3s ease-out;
+}
+
+.facilities-imgc-sub2 {
   position: absolute;
   color: white;
   font-size: 8vh;
@@ -841,14 +885,38 @@ body {
     left: 3vh;
   }
   .facilities-imgs-sub2 {
+    font-size: 8vh;
+    top: 57vh;
+    left: 32vh;
+  }
+  .facilities-imgb {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .facilities-imgb-sub {
     position: absolute;
-    color: white;
+    color: #061822;
     font-size: 8vh;
     font-family: dex;
     top: 57vh;
-    left: 32vh;
-    -webkit-animation: miright 3s ease-out;
-            animation: miright 3s ease-out;
+    left: 4vh;
+    -webkit-animation: mileft 3s ease-out;
+            animation: mileft 3s ease-out;
+  }
+  .facilities-imgb-sub2 {
+    font-size: 3vh;
+    top: 23vh;
+    left: 4vh;
+    visibility: visible;
+  }
+  .facilities-imgc {
+    width: 0;
+  }
+  .facilities-imgc-sub2 {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
   .facilities-writing {
     width: 100%;
@@ -868,7 +936,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 2vh;
   }
   .facilities-writing-line {
     width: 40%;
@@ -891,22 +958,6 @@ body {
     font-size: 6vh;
     padding-bottom: 1vh;
     color: #061822;
-  }
-  .facilities .ani-1 {
-    -webkit-animation: mileft2 1s ease-out;
-            animation: mileft2 1s ease-out;
-  }
-  .facilities .ani-2 {
-    -webkit-animation: mileft2 2s ease-out;
-            animation: mileft2 2s ease-out;
-  }
-  .facilities .ani-3 {
-    -webkit-animation: mileft2 3s ease-out;
-            animation: mileft2 3s ease-out;
-  }
-  .facilities .ani-4 {
-    -webkit-animation: mileft2 4s ease-out;
-            animation: mileft2 4s ease-out;
   }
   .facilities-flex {
     display: -webkit-box;

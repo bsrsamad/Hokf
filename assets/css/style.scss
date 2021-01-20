@@ -270,7 +270,11 @@ body {
     background: $red;
   }
 }
-
+.facilitiesb {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
 .facilities {
   width: 100%;
   background: $white;
@@ -282,7 +286,38 @@ body {
     width: 100%;
     height: 100%;
   }
+  &-imgb {
+    width: 0;
+    &-sub2 {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
   &-imgs {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    &-sub {
+      position: absolute;
+      color: $blackblue;
+      font-size: 8vh;
+      font-family: $dex;
+      top: 57vh;
+      left: 4vh;
+      animation: mileft 3s ease-out;
+    }
+    &-sub2 {
+      position: absolute;
+      color: $white;
+      font-size: 8vh;
+      font-family: $dex;
+      top: 57vh;
+      left: 32vh;
+      animation: miright 3s ease-out;
+    }
+  }
+  &-imgc {
     width: 50%;
     height: 100%;
     position: relative;
@@ -647,13 +682,37 @@ body {
         left: 3vh;
       }
       &-sub2 {
+        font-size: 8vh;
+        top: 57vh;
+        left: 32vh;
+      }
+    }
+    &-imgb {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      &-sub {
         position: absolute;
-        color: $white;
+        color: $blackblue;
         font-size: 8vh;
         font-family: $dex;
         top: 57vh;
-        left: 32vh;
-        animation: miright 3s ease-out;
+        left: 4vh;
+        animation: mileft 3s ease-out;
+      }
+      &-sub2 {
+        font-size: 3vh;
+        top: 23vh;
+        left: 4vh;
+        visibility: visible;
+      }
+    }
+    &-imgc {
+      width: 0;
+      &-sub2 {
+        visibility: hidden;
+        width: 0;
+        height: 0;
       }
     }
     &-writing {
@@ -669,7 +728,6 @@ body {
       }
       &-flex2 {
         display: flex;
-        margin-bottom: 2vh;
       }
       &-line {
         width: 40%;
@@ -690,20 +748,6 @@ body {
         font-size: 6vh;
         padding-bottom: 1vh;
         color: $blackblue;
-      }
-    }
-    .ani {
-      &-1 {
-        animation: mileft2 1s ease-out;
-      }
-      &-2 {
-        animation: mileft2 2s ease-out;
-      }
-      &-3 {
-        animation: mileft2 3s ease-out;
-      }
-      &-4 {
-        animation: mileft2 4s ease-out;
       }
     }
     &-flex {
