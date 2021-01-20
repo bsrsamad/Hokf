@@ -732,5 +732,13 @@ body {
   .header {
     width: 100%;
   }
+  .flex {
+    display: inline;
+    width: 100%;
+  }
+  .flex-logo {
+    width: 80%;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -544,4 +544,12 @@ body {
   .header {
     width: 100%;
   }
+  .flex {
+    display: inline;
+    width: 100%;
+    &-logo {
+      width: 80%;
+      margin: auto;
+    }
+  }
 }

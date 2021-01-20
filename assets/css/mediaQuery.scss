@@ -1,0 +1,49 @@
+$blackblue: rgb(6, 24, 34);
+$black: rgb(14, 8, 8);
+$red: rgb(238, 3, 10);
+$white: rgb(255, 255, 255);
+$light: light;
+$medium: midium;
+$avenir: avenir;
+$calibri: calibri;
+$dex: dex;
+@media screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .flex {
+    width: 100%;
+    display: inline-block;
+    display: none;
+
+    &-logo {
+      width: 20%;
+      padding: 5vh;
+    }
+    &-item {
+      margin: auto;
+    }
+    &-nav {
+      width: 80%;
+      align-self: center;
+      display: flex;
+
+      a:link {
+        text-decoration: none;
+        color: $white;
+        font-family: $light;
+        font-size: 4vh;
+        float: right;
+      }
+      & a:visited {
+        color: $white;
+      }
+      & a:hover {
+        color: $red;
+      }
+    }
+    &-items {
+      padding-right: 8vh;
+    }
+  }
+}
