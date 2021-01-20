@@ -574,7 +574,7 @@ body {
       margin: auto;
       width: 50%;
       padding: 1vh;
-      padding-left: 4vh;
+      // padding-left: 4vh;
     }
   }
   .flex {
@@ -596,16 +596,36 @@ body {
     padding-bottom: 4vh;
 
     &-main {
-      font-size: 6.2vh;
+      width: 100%;
+      font-size: 4vh;
       font-weight: 300;
       letter-spacing: 10px;
       animation: mileft 3s ease-out;
     }
     &-sub {
+      width: 100%;
       font-size: 2.6vh;
       font-weight: 400;
-      letter-spacing: 5px;
+      letter-spacing: 1px;
       animation: miright 3s ease-out;
+    }
+  }
+  .facilitySub {
+    display: flex;
+    background: $white;
+    align-items: center;
+    &-header {
+      font-size: 5vh;
+      font-family: $medium;
+      color: $blackblue;
+      padding: 4vh;
+      margin: auto;
+    }
+    &-line {
+      margin: 0vh;
+      width: 0%;
+      height: 0px;
+      visibility: hidden;
     }
   }
 }
