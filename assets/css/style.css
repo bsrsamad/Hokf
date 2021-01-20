@@ -894,16 +894,6 @@ body {
     height: 100%;
     position: relative;
   }
-  .facilities-imgb-sub {
-    position: absolute;
-    color: #061822;
-    font-size: 8vh;
-    font-family: dex;
-    top: 57vh;
-    left: 4vh;
-    -webkit-animation: mileft 3s ease-out;
-            animation: mileft 3s ease-out;
-  }
   .facilities-imgb-sub2 {
     font-size: 3vh;
     top: 23vh;
@@ -911,12 +901,16 @@ body {
     visibility: visible;
   }
   .facilities-imgc {
-    width: 0;
+    width: 0px;
+    height: 0%;
+    display: none;
   }
   .facilities-imgc-sub2 {
     visibility: hidden;
     width: 0;
     height: 0;
+    padding: 0;
+    margin: 0;
   }
   .facilities-writing {
     width: 100%;
@@ -947,15 +941,15 @@ body {
   }
   .facilities-writing-item {
     width: 30%;
-    padding-left: 2vh;
+    padding-left: 2.5vh;
     font-size: 3vh;
     padding-bottom: 1vh;
     color: #ee030a;
   }
   .facilities-writing-item2 {
     font-family: midium;
-    width: 50%;
-    font-size: 6vh;
+    width: 70%;
+    font-size: 3vh;
     padding-bottom: 1vh;
     color: #061822;
   }

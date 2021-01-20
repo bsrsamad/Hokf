@@ -691,15 +691,6 @@ body {
       width: 100%;
       height: 100%;
       position: relative;
-      &-sub {
-        position: absolute;
-        color: $blackblue;
-        font-size: 8vh;
-        font-family: $dex;
-        top: 57vh;
-        left: 4vh;
-        animation: mileft 3s ease-out;
-      }
       &-sub2 {
         font-size: 3vh;
         top: 23vh;
@@ -708,11 +699,15 @@ body {
       }
     }
     &-imgc {
-      width: 0;
+      width: 0px;
+      height: 0%;
+      display: none;
       &-sub2 {
         visibility: hidden;
         width: 0;
         height: 0;
+        padding: 0;
+        margin: 0;
       }
     }
     &-writing {
@@ -737,15 +732,15 @@ body {
       }
       &-item {
         width: 30%;
-        padding-left: 2vh;
+        padding-left: 2.5vh;
         font-size: 3vh;
         padding-bottom: 1vh;
         color: $red;
       }
       &-item2 {
         font-family: $medium;
-        width: 50%;
-        font-size: 6vh;
+        width: 70%;
+        font-size: 3vh;
         padding-bottom: 1vh;
         color: $blackblue;
       }
