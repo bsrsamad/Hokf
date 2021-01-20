@@ -958,5 +958,27 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .images-header {
+    font-size: 5vh;
+    font-family: midium;
+    color: #061822;
+    padding: 4vh;
+    margin: auto;
+  }
+  .images-line {
+    margin: 0vh;
+    width: 0%;
+    height: 0px;
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */

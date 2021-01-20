@@ -749,4 +749,22 @@ body {
       display: flex;
     }
   }
+  .images {
+    display: flex;
+    background: $white;
+    align-items: center;
+    &-header {
+      font-size: 5vh;
+      font-family: $medium;
+      color: $blackblue;
+      padding: 4vh;
+      margin: auto;
+    }
+    &-line {
+      margin: 0vh;
+      width: 0%;
+      height: 0px;
+      visibility: hidden;
+    }
+  }
 }
