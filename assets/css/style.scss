@@ -301,7 +301,7 @@ body {
     &-sub {
       position: absolute;
       color: $blackblue;
-      font-size: 8vh;
+      font-size: 6vh;
       font-family: $dex;
       top: 57vh;
       left: 4vh;
@@ -310,7 +310,7 @@ body {
     &-sub2 {
       position: absolute;
       color: $white;
-      font-size: 8vh;
+      font-size: 6vh;
       font-family: $dex;
       top: 57vh;
       left: 32vh;
@@ -358,7 +358,9 @@ body {
       margin-bottom: 2vh;
     }
     &-line {
-      width: 40%;
+      width: 30%;
+      min-width: 5%;
+      max-width: 30%;
       height: 1px;
       background: $black;
       align-self: center;
@@ -534,19 +536,19 @@ body {
   &-address {
     width: 50%;
     padding-left: 4vh;
-    font-size: 4vh;
-
-    // font-size: 5vh;
-    font-family: $medium;
     padding-bottom: 5vh;
+  }
+  &-word {
+    font-size: 4vh;
+    padding-bottom: 2vh;
+    font-family: $medium;
   }
   &-phone {
     width: 50%;
     padding-right: 5vh;
-    // padding-bottom: 0.1vh;
-    // padding-top: 0.1vh;
     font-size: 4vh;
     font-family: $calibri;
+    font-weight: 450;
   }
   &-container {
     width: 30%;
@@ -824,6 +826,11 @@ body {
       display: inline;
       background: rgb(197, 197, 197);
     }
+    &-word {
+      font-size: 4vh;
+      padding-bottom: 2vh;
+      font-family: $medium;
+    }
     &-address {
       width: 100%;
       font-size: 2.5vh;
@@ -833,8 +840,8 @@ body {
       background: rgb(197, 197, 197);
     }
     &-phone {
+      padding-top: 40px;
       width: 100%;
-      font-size: 3vh;
       font-family: $calibri;
       padding: 0;
       background: rgb(197, 197, 197);
@@ -853,7 +860,7 @@ body {
       margin: auto;
 
       &-img {
-        width: 5vh;
+        width: 4vh;
         margin-right: 2vh;
       }
     }
